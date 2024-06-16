@@ -10,8 +10,8 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public extension Color {
-    /// Convert hex string to Color
-    /// - Parameter hex: Hex color code as a string
+    /// Convert hex string to Color.
+    /// - Parameter hex: Hex color code as a string.
     init(hex: String) {
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
@@ -29,8 +29,8 @@ public extension Color {
 }
 
 public extension UIColor {
-    /// Convert hex string to Color
-    /// - Parameter hex: Hex color code as a string
+    /// Convert hex string to Color.
+    /// - Parameter hex: Hex color code as a string.
     convenience init(hex: String) {
         var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
